@@ -15,4 +15,7 @@ const MyUI = {
   },
 };
 
+// 按需引入
+export { Card, Demo };
+
 export default MyUI;
