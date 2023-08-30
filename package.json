@@ -1,8 +1,17 @@
 {
   "name": "component-library",
-  "private": true,
+  "description": "自定义组件库",
+  "main": "dist/index.umd.js",
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "ui",
+    "组件库"
+  ],
+  "files": [
+    "dist",
+    "components"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -12,6 +21,8 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-umd": "^7.22.5",
+    "@rollup/plugin-multi-entry": "^6.0.0",
     "@types/node": "^20.5.6",
     "@vitejs/plugin-vue": "^4.2.3",
     "stylus": "^0.59.0",
